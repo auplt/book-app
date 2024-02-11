@@ -1,0 +1,30 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "Book app",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auplt/book-app.git"
+  },
+  "keywords": [
+    "books"
+  ],
+  "author": "Alex D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auplt/book-app/issues"
+  },
+  "homepage": "https://github.com/auplt/book-app#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^8.56.0",
+    "rollup": "^4.10.0",
+    "rollup-plugin-import-css": "^3.4.0"
+  }
+}
