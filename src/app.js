@@ -3,6 +3,9 @@ import { MainView } from "./views/main/main";
 class App {
   //  Куда идти
   routes = [{ path: "", view: MainView }];
+  // Работает с favourates
+  appState = { favourates: [] };
+
   constructor() {
     //   Точно нужен bind?
     //   Подписываемся на изменение hash
@@ -17,7 +20,7 @@ class App {
     }
     // console.log(this);
     const view = this.routes.find((r) => r.path == location.hash).view;
-    this.currentView = new view();
+    this.currentView = new view(this.appState);
     this.currentView.render();
   }
 }

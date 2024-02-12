@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.menu__item:visited {
+  color: var(--black);
+}
+
+.menu__counter {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 28px;
+  border: 1px solid var(--black);
+  padding: 0px 10px;
+  border-radius: 50%;
+}
