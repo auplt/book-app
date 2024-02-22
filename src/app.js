@@ -1,10 +1,16 @@
+import { BookView } from "./views/book/book";
+import { FavoritesView } from "./views/favorites/favorites";
 import { MainView } from "./views/main/main";
 
 class App {
   //  Куда идти
-  routes = [{ path: "", view: MainView }];
-  // Работает с favourates
-  appState = { favourates: [] };
+  routes = [
+    { path: "", view: MainView },
+    { path: "#favorites", view: FavoritesView },
+    { path: "#book/:id", view: BookView },
+  ];
+  // Работает с favorites
+  appState = { favorites: [] };
 
   constructor() {
     //   Точно нужен bind?
@@ -18,8 +24,10 @@ class App {
     if (this.currentView) {
       this.currentView.destroy();
     }
-    // console.log(this);
-    const view = this.routes.find((r) => r.path == location.hash).view;
+
+    const view = this.routes.find(
+      (r) => r.path.split("/")[0] == location.hash.split("?")[0]
+    ).view;
     this.currentView = new view(this.appState);
     this.currentView.render();
   }

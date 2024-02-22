@@ -6,6 +6,9 @@ body {
 :root {
   --black: #121212;
   --white: #fafafa;
+  --border-5: 5px;
+  --grey: #dedede;
+  --grey-dark: #252525;
 }
 
 #root {
