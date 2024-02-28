@@ -1,7 +1,13 @@
 # Book app
 
-Book app is a single page application that helps you to find a book and save it to favorites.
-Application use [Open library API](https://openlibrary.org/developers/api) to search all necessary information about books.
+Book app is a single page application that helps you to find a book and save it to favorites. Application uses [Open library API](https://openlibrary.org/developers/api) to search all necessary information about books. With this app you can do the following
+
+* Find books by title, author, genre, etc
+* Add and delete books from favorites
+* Get detailed information about a book
+
+Simple handmade driver helps to display all this information.
+It traks changes and displays them.
 
 ---
 
