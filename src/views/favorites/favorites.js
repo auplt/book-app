@@ -9,7 +9,7 @@ export class FavoritesView extends AbstractView {
   state = {
     list: [],
     offset: 0,
-    limit: 3,
+    limit: 12,
     numFound: 0,
   };
 
